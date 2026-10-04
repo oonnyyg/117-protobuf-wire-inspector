@@ -1,0 +1,16 @@
+{
+  "fields": [
+    {"number": 1, "name": "id", "type": "uint64"},
+    {"number": 2, "name": "delta", "type": "sint64"},
+    {"number": 3, "name": "flags", "type": "fixed32"},
+    {"number": 4, "name": "label", "type": "string"},
+    {"number": 5, "name": "blob", "type": "bytes"},
+    {"number": 6, "name": "samples", "type": "uint64", "repeated": true},
+    {"number": 7, "name": "child", "type": "message", "message": {
+      "fields": [
+        {"number": 1, "name": "note", "type": "string"},
+        {"number": 2, "name": "count", "type": "sint64"}
+      ]
+    }}
+  ]
+}
